@@ -706,8 +706,8 @@ EXPECT=<<EOF
 |  |   |    0x00003ce8      xor edi, edi
 |  |   |    0x00003cea      mov dword [rip + 0x1d60c], 0               ; [0x21300:4]=0
 |  |   |    0x00003cf4      call fcn.00012740
-|    || |   ; CODE XREF from main @ 0x3ce1
-|    || |   ; CODE XREFS from case.0xa44c.7 @ +0x34, +0x66a
+|  |   |    ; CODE XREF from main @ 0x3ce1
+|  |   |    ; CODE XREFS from case.0xa44c.7 @ +0x34, +0x66a
 | --------> 0x00003cf9      lea rdi, [rip + 0x14fb4]                   ; str.QUOTING_STYLE
 |  |   |                                                               ; 0x18cb4 ; "QUOTING_STYLE" ; const char *name
 EOF
@@ -749,8 +749,8 @@ EXPECT=<<EOF
 |  |   |    0x00003ce8      xor edi, edi
 |  |   |    0x00003cea      mov dword [rip + 0x1d60c], 0               ; [0x21300:4]=0
 |  |   |    0x00003cf4      call fcn.00012740
-|    || |   ; CODE XREF from main @ 0x3ce1
-|    || |   ; CODE XREFS from case.0xa44c.7 @ +0x34, +0x66a
+|  |   |    ; CODE XREF from main @ 0x3ce1
+|  |   |    ; CODE XREFS from case.0xa44c.7 @ +0x34, +0x66a
 | --------> 0x00003cf9      lea rdi, [rip + 0x14fb4]                   ; str.QUOTING_STYLE
 |  |   |                                                               ; 0x18cb4 ; "QUOTING_STYLE" ; const char *name
 EOF
